@@ -13,7 +13,7 @@
     margin-right: auto; 
     margin-left: auto;
 }
-.layout-container .layout-element-link
+.layout-container .link-block
 {
     font-weight: inherit;
 
@@ -23,8 +23,8 @@
 
     color: inherit;
 }
-.layout-container .layout-element-link:focus,
-.layout-container .layout-element-link:hover
+.layout-container .link-block:focus,
+.layout-container .link-block:hover
 {
     text-decoration: none; 
 
