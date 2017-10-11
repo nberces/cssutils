@@ -1,0 +1,56 @@
+@mixin layout-container-tiled
+{
+    &:before,
+    &:after
+    {
+        content: ' ';
+        display: table;
+    }
+
+    &:after
+    {
+        clear: both;
+    }
+
+    > .layout-element
+    {
+        float: left;
+    }
+}
+
+@mixin flexbox-layout-container-tiled
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.layout-container.tiled
+{
+    @media screen and (min-width: $breakpoint_tiling-x2-on)
+    {
+        @include layout-container-tiled;
+    }
+}
+
+.layout-container.tiled.rigid
+{
+    @include layout-container-tiled;
+}
+
+.flexbox
+    .layout-container.tiled,
+.flexbox.layout-container.tiled
+{
+    @media screen and (min-width: $breakpoint_tiling-x2-on)
+    {
+        @include flexbox-layout-container-tiled;
+    }
+}
+
+.flexbox
+    .layout-container.tiled.rigid,
+.flexbox.layout-container.tiled.rigid
+{
+    @include flexbox-layout-container-tiled;
+}

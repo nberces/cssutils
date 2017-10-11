@@ -1,0 +1,43 @@
+.layout-container
+{
+    margin: 0;
+    padding: 0;
+
+    > .layout-element
+    {
+        margin: 0;
+        padding: 0;
+
+        > *
+        {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .layout-element-link
+    {
+        display: table;
+        font-weight: inherit;
+        text-decoration: none;
+        color: inherit;
+
+        &:focus,
+        &:hover
+        {
+            outline: none;
+            text-decoration: none;
+        }
+    }
+}
+
+ol.layout-container,
+ul.layout-container
+{
+    list-style-type: none;
+
+    > li.layout-element
+    {
+        list-style-type: none;
+    }
+}

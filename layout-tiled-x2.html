@@ -1,0 +1,864 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet"
+            href="dist/cssutils-layout.css">
+        <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+            integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+            crossorigin="anonymous">
+        <style>
+            body
+            {
+                padding: 20px;
+                background-color: #000;
+            }
+
+            body
+                > h1
+            {
+                margin: 2em 0 0;
+                text-align: center;
+                color: #fff;
+            }
+
+            body
+                > h1
+                + *
+            {
+                margin-top: 1em!important;
+            }
+
+            .layout-element
+            {
+                background: linear-gradient(45deg, rgba(221,221,221,1) 0%, rgba(238,238,238,1) 100%);
+            }
+
+            .card
+            {
+                box-sizing: border-box;
+                width: 100%;
+                max-width: 318px;
+                overflow: hidden;
+                word-break: break-all;
+            }
+
+            .card
+                img
+            {
+                max-width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Tiling x2</h1>
+        <ul class="layout-container tiled tiling-x2">
+            <li class="layout-element">
+                <div class="card">
+                    <img class="card-img-top" src="http://placehold.it/318x180">
+                    <div class="card-block">
+                        <h4 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                        <p class="card-text">Proin imperdiet elementum justo, vitae bibendum justo aliquet aliquam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla facilisi. Cras fringilla, risus ac sodales tincidunt, lectus tellus rutrum sapien, ut interdum est massa vitae dui. Sed eget faucibus quam.</p>
+                        <a href="#0" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </li>
+            <li class="layout-element">
+                <a class="layout-element-link" href="#0">
+                    <div class="card">
+                        <img class="card-img-top" src="http://placehold.it/318x180">
+                        <div class="card-block">
+                            <h4 class="card-title">Donec congue nibh sit amet tortor malesuada aliquet.</h4>
+                            <p class="card-text">Fusce faucibus varius nisi, quis faucibus sapien auctor ac. Vivamus porttitor pretium varius. Pellentesque gravida justo in metus commodo, vitae bibendum justo scelerisque. Quisque varius vestibulum est, vitae sollicitudin nisi porttitor vel. Pellentesque ac tincidunt leo, sed elementum metus.</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="layout-element">
+                <a class="layout-element-link" href="#0">
+                    <div class="card">
+                        <img class="card-img-top" src="http://placehold.it/318x180">
+                        <div class="card-block">
+                            <h4 class="card-title">Suspendisse nec ipsum tempus, hendrerit metus eu, vulputate orci.</h4>
+                            <p class="card-text">Curabitur sed fringilla libero. Nullam eu vulputate nisi. Fusce non finibus turpis, vel rutrum diam. Praesent ut nibh vitae nisi eleifend volutpat.</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="layout-element">
+                <div class="card">
+                    <img class="card-img-top" src="http://placehold.it/318x180">
+                    <div class="card-block">
+                        <h4 class="card-title">Etiam facilisis velit ut nulla suscipit congue.</h4>
+                        <p class="card-text">Curabitur vel pharetra sem. Cras id massa efficitur, lobortis tortor at, dictum lacus. Vestibulum id neque et purus pretium euismod. Curabitur odio neque, aliquet vitae tempus quis, vulputate in nibh. Donec cursus purus a ex commodo vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <a href="#0" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </li>
+            <li class="layout-element">
+                <div class="card">
+                    <img class="card-img-top" src="http://placehold.it/318x180">
+                    <div class="card-block">
+                        <h4 class="card-title">Pellentesque viverra vitae augue quis ornare.</h4>
+                        <p class="card-text">Praesent consequat ante neque, eget hendrerit felis porta in.</p>
+                        <a href="#0" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </li>
+            <li class="layout-element">
+                <a class="layout-element-link" href="#0">
+                    <div class="card">
+                        <img class="card-img-top" src="http://placehold.it/318x180">
+                        <div class="card-block">
+                            <h4 class="card-title">Sed et porta tortor.</h4>
+                            <p class="card-text">Praesent consequat ante neque, eget hendrerit felis porta in. Pellentesque viverra vitae augue quis ornare. Cras efficitur massa et ligula ultrices, a congue nibh varius. Sed ac venenatis lacus. Aenean est nisl, luctus et elementum ut, tincidunt a nisi. Praesent sit amet sollicitudin sem. Vestibulum consequat iaculis lorem ac consectetur. Pellentesque vulputate ipsum vel aliquet pharetra. Ut hendrerit diam at augue varius, quis posuere leo hendrerit.</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <h1>Tiling x2 with Flexbox</h1>
+        <div class="flexbox">
+            <ul class="layout-container tiled tiling-x2">
+                <li class="layout-element">
+                    <div class="card">
+                        <img class="card-img-top" src="http://placehold.it/318x180">
+                        <div class="card-block">
+                            <h4 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                            <p class="card-text">Proin imperdiet elementum justo, vitae bibendum justo aliquet aliquam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla facilisi. Cras fringilla, risus ac sodales tincidunt, lectus tellus rutrum sapien, ut interdum est massa vitae dui. Sed eget faucibus quam.</p>
+                            <a href="#0" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="layout-element">
+                    <a class="layout-element-link" href="#0">
+                        <div class="card">
+                            <img class="card-img-top" src="http://placehold.it/318x180">
+                            <div class="card-block">
+                                <h4 class="card-title">Donec congue nibh sit amet tortor malesuada aliquet.</h4>
+                                <p class="card-text">Fusce faucibus varius nisi, quis faucibus sapien auctor ac. Vivamus porttitor pretium varius. Pellentesque gravida justo in metus commodo, vitae bibendum justo scelerisque. Quisque varius vestibulum est, vitae sollicitudin nisi porttitor vel. Pellentesque ac tincidunt leo, sed elementum metus.</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="layout-element">
+                    <a class="layout-element-link" href="#0">
+                        <div class="card">
+                            <img class="card-img-top" src="http://placehold.it/318x180">
+                            <div class="card-block">
+                                <h4 class="card-title">Suspendisse nec ipsum tempus, hendrerit metus eu, vulputate orci.</h4>
+                                <p class="card-text">Curabitur sed fringilla libero. Nullam eu vulputate nisi. Fusce non finibus turpis, vel rutrum diam. Praesent ut nibh vitae nisi eleifend volutpat.</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="layout-element">
+                    <div class="card">
+                        <img class="card-img-top" src="http://placehold.it/318x180">
+                        <div class="card-block">
+                            <h4 class="card-title">Etiam facilisis velit ut nulla suscipit congue.</h4>
+                            <p class="card-text">Curabitur vel pharetra sem. Cras id massa efficitur, lobortis tortor at, dictum lacus. Vestibulum id neque et purus pretium euismod. Curabitur odio neque, aliquet vitae tempus quis, vulputate in nibh. Donec cursus purus a ex commodo vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="#0" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="layout-element">
+                    <div class="card">
+                        <img class="card-img-top" src="http://placehold.it/318x180">
+                        <div class="card-block">
+                            <h4 class="card-title">Pellentesque viverra vitae augue quis ornare.</h4>
+                            <p class="card-text">Praesent consequat ante neque, eget hendrerit felis porta in.</p>
+                            <a href="#0" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="layout-element">
+                    <a class="layout-element-link" href="#0">
+                        <div class="card">
+                            <img class="card-img-top" src="http://placehold.it/318x180">
+                            <div class="card-block">
+                                <h4 class="card-title">Sed et porta tortor.</h4>
+                                <p class="card-text">Praesent consequat ante neque, eget hendrerit felis porta in. Pellentesque viverra vitae augue quis ornare. Cras efficitur massa et ligula ultrices, a congue nibh varius. Sed ac venenatis lacus. Aenean est nisl, luctus et elementum ut, tincidunt a nisi. Praesent sit amet sollicitudin sem. Vestibulum consequat iaculis lorem ac consectetur. Pellentesque vulputate ipsum vel aliquet pharetra. Ut hendrerit diam at augue varius, quis posuere leo hendrerit.</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <h1>Tiling x2 with Gutters</h1>
+        <ul class="layout-container tiled tiling-x2 with-gutters">
+            <li class="layout-element">
+                <div class="card">
+                    <img class="card-img-top" src="http://placehold.it/318x180">
+                    <div class="card-block">
+                        <h4 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                        <p class="card-text">Proin imperdiet elementum justo, vitae bibendum justo aliquet aliquam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla facilisi. Cras fringilla, risus ac sodales tincidunt, lectus tellus rutrum sapien, ut interdum est massa vitae dui. Sed eget faucibus quam.</p>
+                        <a href="#0" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </li>
+            <li class="layout-element">
+                <a class="layout-element-link" href="#0">
+                    <div class="card">
+                        <img class="card-img-top" src="http://placehold.it/318x180">
+                        <div class="card-block">
+                            <h4 class="card-title">Donec congue nibh sit amet tortor malesuada aliquet.</h4>
+                            <p class="card-text">Fusce faucibus varius nisi, quis faucibus sapien auctor ac. Vivamus porttitor pretium varius. Pellentesque gravida justo in metus commodo, vitae bibendum justo scelerisque. Quisque varius vestibulum est, vitae sollicitudin nisi porttitor vel. Pellentesque ac tincidunt leo, sed elementum metus.</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="layout-element">
+                <a class="layout-element-link" href="#0">
+                    <div class="card">
+                        <img class="card-img-top" src="http://placehold.it/318x180">
+                        <div class="card-block">
+                            <h4 class="card-title">Suspendisse nec ipsum tempus, hendrerit metus eu, vulputate orci.</h4>
+                            <p class="card-text">Curabitur sed fringilla libero. Nullam eu vulputate nisi. Fusce non finibus turpis, vel rutrum diam. Praesent ut nibh vitae nisi eleifend volutpat.</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="layout-element">
+                <div class="card">
+                    <img class="card-img-top" src="http://placehold.it/318x180">
+                    <div class="card-block">
+                        <h4 class="card-title">Etiam facilisis velit ut nulla suscipit congue.</h4>
+                        <p class="card-text">Curabitur vel pharetra sem. Cras id massa efficitur, lobortis tortor at, dictum lacus. Vestibulum id neque et purus pretium euismod. Curabitur odio neque, aliquet vitae tempus quis, vulputate in nibh. Donec cursus purus a ex commodo vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <a href="#0" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </li>
+            <li class="layout-element">
+                <div class="card">
+                    <img class="card-img-top" src="http://placehold.it/318x180">
+                    <div class="card-block">
+                        <h4 class="card-title">Pellentesque viverra vitae augue quis ornare.</h4>
+                        <p class="card-text">Praesent consequat ante neque, eget hendrerit felis porta in.</p>
+                        <a href="#0" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </li>
+            <li class="layout-element">
+                <a class="layout-element-link" href="#0">
+                    <div class="card">
+                        <img class="card-img-top" src="http://placehold.it/318x180">
+                        <div class="card-block">
+                            <h4 class="card-title">Sed et porta tortor.</h4>
+                            <p class="card-text">Praesent consequat ante neque, eget hendrerit felis porta in. Pellentesque viverra vitae augue quis ornare. Cras efficitur massa et ligula ultrices, a congue nibh varius. Sed ac venenatis lacus. Aenean est nisl, luctus et elementum ut, tincidunt a nisi. Praesent sit amet sollicitudin sem. Vestibulum consequat iaculis lorem ac consectetur. Pellentesque vulputate ipsum vel aliquet pharetra. Ut hendrerit diam at augue varius, quis posuere leo hendrerit.</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <h1>Tiling x2 with Gutters &amp; Flexbox</h1>
+        <div class="flexbox">
+            <ul class="layout-container tiled tiling-x2 with-gutters">
+                <li class="layout-element">
+                    <div class="card">
+                        <img class="card-img-top" src="http://placehold.it/318x180">
+                        <div class="card-block">
+                            <h4 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                            <p class="card-text">Proin imperdiet elementum justo, vitae bibendum justo aliquet aliquam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla facilisi. Cras fringilla, risus ac sodales tincidunt, lectus tellus rutrum sapien, ut interdum est massa vitae dui. Sed eget faucibus quam.</p>
+                            <a href="#0" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="layout-element">
+                    <a class="layout-element-link" href="#0">
+                        <div class="card">
+                            <img class="card-img-top" src="http://placehold.it/318x180">
+                            <div class="card-block">
+                                <h4 class="card-title">Donec congue nibh sit amet tortor malesuada aliquet.</h4>
+                                <p class="card-text">Fusce faucibus varius nisi, quis faucibus sapien auctor ac. Vivamus porttitor pretium varius. Pellentesque gravida justo in metus commodo, vitae bibendum justo scelerisque. Quisque varius vestibulum est, vitae sollicitudin nisi porttitor vel. Pellentesque ac tincidunt leo, sed elementum metus.</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="layout-element">
+                    <a class="layout-element-link" href="#0">
+                        <div class="card">
+                            <img class="card-img-top" src="http://placehold.it/318x180">
+                            <div class="card-block">
+                                <h4 class="card-title">Suspendisse nec ipsum tempus, hendrerit metus eu, vulputate orci.</h4>
+                                <p class="card-text">Curabitur sed fringilla libero. Nullam eu vulputate nisi. Fusce non finibus turpis, vel rutrum diam. Praesent ut nibh vitae nisi eleifend volutpat.</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="layout-element">
+                    <div class="card">
+                        <img class="card-img-top" src="http://placehold.it/318x180">
+                        <div class="card-block">
+                            <h4 class="card-title">Etiam facilisis velit ut nulla suscipit congue.</h4>
+                            <p class="card-text">Curabitur vel pharetra sem. Cras id massa efficitur, lobortis tortor at, dictum lacus. Vestibulum id neque et purus pretium euismod. Curabitur odio neque, aliquet vitae tempus quis, vulputate in nibh. Donec cursus purus a ex commodo vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="#0" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="layout-element">
+                    <div class="card">
+                        <img class="card-img-top" src="http://placehold.it/318x180">
+                        <div class="card-block">
+                            <h4 class="card-title">Pellentesque viverra vitae augue quis ornare.</h4>
+                            <p class="card-text">Praesent consequat ante neque, eget hendrerit felis porta in.</p>
+                            <a href="#0" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="layout-element">
+                    <a class="layout-element-link" href="#0">
+                        <div class="card">
+                            <img class="card-img-top" src="http://placehold.it/318x180">
+                            <div class="card-block">
+                                <h4 class="card-title">Sed et porta tortor.</h4>
+                                <p class="card-text">Praesent consequat ante neque, eget hendrerit felis porta in. Pellentesque viverra vitae augue quis ornare. Cras efficitur massa et ligula ultrices, a congue nibh varius. Sed ac venenatis lacus. Aenean est nisl, luctus et elementum ut, tincidunt a nisi. Praesent sit amet sollicitudin sem. Vestibulum consequat iaculis lorem ac consectetur. Pellentesque vulputate ipsum vel aliquet pharetra. Ut hendrerit diam at augue varius, quis posuere leo hendrerit.</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <h1>Tiling x2 with Wide Guttering</h1>
+        <ul class="layout-container tiled tiling-x2 with-gutters guttering-wide">
+            <li class="layout-element">
+                <div class="card">
+                    <img class="card-img-top" src="http://placehold.it/318x180">
+                    <div class="card-block">
+                        <h4 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                        <p class="card-text">Proin imperdiet elementum justo, vitae bibendum justo aliquet aliquam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla facilisi. Cras fringilla, risus ac sodales tincidunt, lectus tellus rutrum sapien, ut interdum est massa vitae dui. Sed eget faucibus quam.</p>
+                        <a href="#0" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </li>
+            <li class="layout-element">
+                <a class="layout-element-link" href="#0">
+                    <div class="card">
+                        <img class="card-img-top" src="http://placehold.it/318x180">
+                        <div class="card-block">
+                            <h4 class="card-title">Donec congue nibh sit amet tortor malesuada aliquet.</h4>
+                            <p class="card-text">Fusce faucibus varius nisi, quis faucibus sapien auctor ac. Vivamus porttitor pretium varius. Pellentesque gravida justo in metus commodo, vitae bibendum justo scelerisque. Quisque varius vestibulum est, vitae sollicitudin nisi porttitor vel. Pellentesque ac tincidunt leo, sed elementum metus.</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="layout-element">
+                <a class="layout-element-link" href="#0">
+                    <div class="card">
+                        <img class="card-img-top" src="http://placehold.it/318x180">
+                        <div class="card-block">
+                            <h4 class="card-title">Suspendisse nec ipsum tempus, hendrerit metus eu, vulputate orci.</h4>
+                            <p class="card-text">Curabitur sed fringilla libero. Nullam eu vulputate nisi. Fusce non finibus turpis, vel rutrum diam. Praesent ut nibh vitae nisi eleifend volutpat.</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="layout-element">
+                <div class="card">
+                    <img class="card-img-top" src="http://placehold.it/318x180">
+                    <div class="card-block">
+                        <h4 class="card-title">Etiam facilisis velit ut nulla suscipit congue.</h4>
+                        <p class="card-text">Curabitur vel pharetra sem. Cras id massa efficitur, lobortis tortor at, dictum lacus. Vestibulum id neque et purus pretium euismod. Curabitur odio neque, aliquet vitae tempus quis, vulputate in nibh. Donec cursus purus a ex commodo vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <a href="#0" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </li>
+            <li class="layout-element">
+                <div class="card">
+                    <img class="card-img-top" src="http://placehold.it/318x180">
+                    <div class="card-block">
+                        <h4 class="card-title">Pellentesque viverra vitae augue quis ornare.</h4>
+                        <p class="card-text">Praesent consequat ante neque, eget hendrerit felis porta in.</p>
+                        <a href="#0" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </li>
+            <li class="layout-element">
+                <a class="layout-element-link" href="#0">
+                    <div class="card">
+                        <img class="card-img-top" src="http://placehold.it/318x180">
+                        <div class="card-block">
+                            <h4 class="card-title">Sed et porta tortor.</h4>
+                            <p class="card-text">Praesent consequat ante neque, eget hendrerit felis porta in. Pellentesque viverra vitae augue quis ornare. Cras efficitur massa et ligula ultrices, a congue nibh varius. Sed ac venenatis lacus. Aenean est nisl, luctus et elementum ut, tincidunt a nisi. Praesent sit amet sollicitudin sem. Vestibulum consequat iaculis lorem ac consectetur. Pellentesque vulputate ipsum vel aliquet pharetra. Ut hendrerit diam at augue varius, quis posuere leo hendrerit.</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <h1>Tiling x2 with Wide Guttering &amp; Flexbox</h1>
+        <div class="flexbox">
+            <ul class="layout-container tiled tiling-x2 with-gutters guttering-wide">
+                <li class="layout-element">
+                    <div class="card">
+                        <img class="card-img-top" src="http://placehold.it/318x180">
+                        <div class="card-block">
+                            <h4 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                            <p class="card-text">Proin imperdiet elementum justo, vitae bibendum justo aliquet aliquam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla facilisi. Cras fringilla, risus ac sodales tincidunt, lectus tellus rutrum sapien, ut interdum est massa vitae dui. Sed eget faucibus quam.</p>
+                            <a href="#0" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="layout-element">
+                    <a class="layout-element-link" href="#0">
+                        <div class="card">
+                            <img class="card-img-top" src="http://placehold.it/318x180">
+                            <div class="card-block">
+                                <h4 class="card-title">Donec congue nibh sit amet tortor malesuada aliquet.</h4>
+                                <p class="card-text">Fusce faucibus varius nisi, quis faucibus sapien auctor ac. Vivamus porttitor pretium varius. Pellentesque gravida justo in metus commodo, vitae bibendum justo scelerisque. Quisque varius vestibulum est, vitae sollicitudin nisi porttitor vel. Pellentesque ac tincidunt leo, sed elementum metus.</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="layout-element">
+                    <a class="layout-element-link" href="#0">
+                        <div class="card">
+                            <img class="card-img-top" src="http://placehold.it/318x180">
+                            <div class="card-block">
+                                <h4 class="card-title">Suspendisse nec ipsum tempus, hendrerit metus eu, vulputate orci.</h4>
+                                <p class="card-text">Curabitur sed fringilla libero. Nullam eu vulputate nisi. Fusce non finibus turpis, vel rutrum diam. Praesent ut nibh vitae nisi eleifend volutpat.</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="layout-element">
+                    <div class="card">
+                        <img class="card-img-top" src="http://placehold.it/318x180">
+                        <div class="card-block">
+                            <h4 class="card-title">Etiam facilisis velit ut nulla suscipit congue.</h4>
+                            <p class="card-text">Curabitur vel pharetra sem. Cras id massa efficitur, lobortis tortor at, dictum lacus. Vestibulum id neque et purus pretium euismod. Curabitur odio neque, aliquet vitae tempus quis, vulputate in nibh. Donec cursus purus a ex commodo vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="#0" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="layout-element">
+                    <div class="card">
+                        <img class="card-img-top" src="http://placehold.it/318x180">
+                        <div class="card-block">
+                            <h4 class="card-title">Pellentesque viverra vitae augue quis ornare.</h4>
+                            <p class="card-text">Praesent consequat ante neque, eget hendrerit felis porta in.</p>
+                            <a href="#0" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="layout-element">
+                    <a class="layout-element-link" href="#0">
+                        <div class="card">
+                            <img class="card-img-top" src="http://placehold.it/318x180">
+                            <div class="card-block">
+                                <h4 class="card-title">Sed et porta tortor.</h4>
+                                <p class="card-text">Praesent consequat ante neque, eget hendrerit felis porta in. Pellentesque viverra vitae augue quis ornare. Cras efficitur massa et ligula ultrices, a congue nibh varius. Sed ac venenatis lacus. Aenean est nisl, luctus et elementum ut, tincidunt a nisi. Praesent sit amet sollicitudin sem. Vestibulum consequat iaculis lorem ac consectetur. Pellentesque vulputate ipsum vel aliquet pharetra. Ut hendrerit diam at augue varius, quis posuere leo hendrerit.</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <h1>Rigid Tiling x2</h1>
+        <ul class="layout-container tiled tiling-x2 rigid">
+            <li class="layout-element">
+                <div class="card">
+                    <img class="card-img-top" src="http://placehold.it/318x180">
+                    <div class="card-block">
+                        <h4 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                        <p class="card-text">Proin imperdiet elementum justo, vitae bibendum justo aliquet aliquam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla facilisi. Cras fringilla, risus ac sodales tincidunt, lectus tellus rutrum sapien, ut interdum est massa vitae dui. Sed eget faucibus quam.</p>
+                        <a href="#0" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </li>
+            <li class="layout-element">
+                <a class="layout-element-link" href="#0">
+                    <div class="card">
+                        <img class="card-img-top" src="http://placehold.it/318x180">
+                        <div class="card-block">
+                            <h4 class="card-title">Donec congue nibh sit amet tortor malesuada aliquet.</h4>
+                            <p class="card-text">Fusce faucibus varius nisi, quis faucibus sapien auctor ac. Vivamus porttitor pretium varius. Pellentesque gravida justo in metus commodo, vitae bibendum justo scelerisque. Quisque varius vestibulum est, vitae sollicitudin nisi porttitor vel. Pellentesque ac tincidunt leo, sed elementum metus.</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="layout-element">
+                <a class="layout-element-link" href="#0">
+                    <div class="card">
+                        <img class="card-img-top" src="http://placehold.it/318x180">
+                        <div class="card-block">
+                            <h4 class="card-title">Suspendisse nec ipsum tempus, hendrerit metus eu, vulputate orci.</h4>
+                            <p class="card-text">Curabitur sed fringilla libero. Nullam eu vulputate nisi. Fusce non finibus turpis, vel rutrum diam. Praesent ut nibh vitae nisi eleifend volutpat.</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="layout-element">
+                <div class="card">
+                    <img class="card-img-top" src="http://placehold.it/318x180">
+                    <div class="card-block">
+                        <h4 class="card-title">Etiam facilisis velit ut nulla suscipit congue.</h4>
+                        <p class="card-text">Curabitur vel pharetra sem. Cras id massa efficitur, lobortis tortor at, dictum lacus. Vestibulum id neque et purus pretium euismod. Curabitur odio neque, aliquet vitae tempus quis, vulputate in nibh. Donec cursus purus a ex commodo vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <a href="#0" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </li>
+            <li class="layout-element">
+                <div class="card">
+                    <img class="card-img-top" src="http://placehold.it/318x180">
+                    <div class="card-block">
+                        <h4 class="card-title">Pellentesque viverra vitae augue quis ornare.</h4>
+                        <p class="card-text">Praesent consequat ante neque, eget hendrerit felis porta in.</p>
+                        <a href="#0" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </li>
+            <li class="layout-element">
+                <a class="layout-element-link" href="#0">
+                    <div class="card">
+                        <img class="card-img-top" src="http://placehold.it/318x180">
+                        <div class="card-block">
+                            <h4 class="card-title">Sed et porta tortor.</h4>
+                            <p class="card-text">Praesent consequat ante neque, eget hendrerit felis porta in. Pellentesque viverra vitae augue quis ornare. Cras efficitur massa et ligula ultrices, a congue nibh varius. Sed ac venenatis lacus. Aenean est nisl, luctus et elementum ut, tincidunt a nisi. Praesent sit amet sollicitudin sem. Vestibulum consequat iaculis lorem ac consectetur. Pellentesque vulputate ipsum vel aliquet pharetra. Ut hendrerit diam at augue varius, quis posuere leo hendrerit.</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <h1>Rigid Tiling x2 with Flexbox</h1>
+        <div class="flexbox">
+            <ul class="layout-container tiled tiling-x2 rigid">
+                <li class="layout-element">
+                    <div class="card">
+                        <img class="card-img-top" src="http://placehold.it/318x180">
+                        <div class="card-block">
+                            <h4 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                            <p class="card-text">Proin imperdiet elementum justo, vitae bibendum justo aliquet aliquam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla facilisi. Cras fringilla, risus ac sodales tincidunt, lectus tellus rutrum sapien, ut interdum est massa vitae dui. Sed eget faucibus quam.</p>
+                            <a href="#0" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="layout-element">
+                    <a class="layout-element-link" href="#0">
+                        <div class="card">
+                            <img class="card-img-top" src="http://placehold.it/318x180">
+                            <div class="card-block">
+                                <h4 class="card-title">Donec congue nibh sit amet tortor malesuada aliquet.</h4>
+                                <p class="card-text">Fusce faucibus varius nisi, quis faucibus sapien auctor ac. Vivamus porttitor pretium varius. Pellentesque gravida justo in metus commodo, vitae bibendum justo scelerisque. Quisque varius vestibulum est, vitae sollicitudin nisi porttitor vel. Pellentesque ac tincidunt leo, sed elementum metus.</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="layout-element">
+                    <a class="layout-element-link" href="#0">
+                        <div class="card">
+                            <img class="card-img-top" src="http://placehold.it/318x180">
+                            <div class="card-block">
+                                <h4 class="card-title">Suspendisse nec ipsum tempus, hendrerit metus eu, vulputate orci.</h4>
+                                <p class="card-text">Curabitur sed fringilla libero. Nullam eu vulputate nisi. Fusce non finibus turpis, vel rutrum diam. Praesent ut nibh vitae nisi eleifend volutpat.</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="layout-element">
+                    <div class="card">
+                        <img class="card-img-top" src="http://placehold.it/318x180">
+                        <div class="card-block">
+                            <h4 class="card-title">Etiam facilisis velit ut nulla suscipit congue.</h4>
+                            <p class="card-text">Curabitur vel pharetra sem. Cras id massa efficitur, lobortis tortor at, dictum lacus. Vestibulum id neque et purus pretium euismod. Curabitur odio neque, aliquet vitae tempus quis, vulputate in nibh. Donec cursus purus a ex commodo vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="#0" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="layout-element">
+                    <div class="card">
+                        <img class="card-img-top" src="http://placehold.it/318x180">
+                        <div class="card-block">
+                            <h4 class="card-title">Pellentesque viverra vitae augue quis ornare.</h4>
+                            <p class="card-text">Praesent consequat ante neque, eget hendrerit felis porta in.</p>
+                            <a href="#0" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="layout-element">
+                    <a class="layout-element-link" href="#0">
+                        <div class="card">
+                            <img class="card-img-top" src="http://placehold.it/318x180">
+                            <div class="card-block">
+                                <h4 class="card-title">Sed et porta tortor.</h4>
+                                <p class="card-text">Praesent consequat ante neque, eget hendrerit felis porta in. Pellentesque viverra vitae augue quis ornare. Cras efficitur massa et ligula ultrices, a congue nibh varius. Sed ac venenatis lacus. Aenean est nisl, luctus et elementum ut, tincidunt a nisi. Praesent sit amet sollicitudin sem. Vestibulum consequat iaculis lorem ac consectetur. Pellentesque vulputate ipsum vel aliquet pharetra. Ut hendrerit diam at augue varius, quis posuere leo hendrerit.</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <h1>Rigid Tiling x2 with Gutters</h1>
+        <ul class="layout-container tiled tiling-x2 with-gutters rigid">
+            <li class="layout-element">
+                <div class="card">
+                    <img class="card-img-top" src="http://placehold.it/318x180">
+                    <div class="card-block">
+                        <h4 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                        <p class="card-text">Proin imperdiet elementum justo, vitae bibendum justo aliquet aliquam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla facilisi. Cras fringilla, risus ac sodales tincidunt, lectus tellus rutrum sapien, ut interdum est massa vitae dui. Sed eget faucibus quam.</p>
+                        <a href="#0" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </li>
+            <li class="layout-element">
+                <a class="layout-element-link" href="#0">
+                    <div class="card">
+                        <img class="card-img-top" src="http://placehold.it/318x180">
+                        <div class="card-block">
+                            <h4 class="card-title">Donec congue nibh sit amet tortor malesuada aliquet.</h4>
+                            <p class="card-text">Fusce faucibus varius nisi, quis faucibus sapien auctor ac. Vivamus porttitor pretium varius. Pellentesque gravida justo in metus commodo, vitae bibendum justo scelerisque. Quisque varius vestibulum est, vitae sollicitudin nisi porttitor vel. Pellentesque ac tincidunt leo, sed elementum metus.</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="layout-element">
+                <a class="layout-element-link" href="#0">
+                    <div class="card">
+                        <img class="card-img-top" src="http://placehold.it/318x180">
+                        <div class="card-block">
+                            <h4 class="card-title">Suspendisse nec ipsum tempus, hendrerit metus eu, vulputate orci.</h4>
+                            <p class="card-text">Curabitur sed fringilla libero. Nullam eu vulputate nisi. Fusce non finibus turpis, vel rutrum diam. Praesent ut nibh vitae nisi eleifend volutpat.</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="layout-element">
+                <div class="card">
+                    <img class="card-img-top" src="http://placehold.it/318x180">
+                    <div class="card-block">
+                        <h4 class="card-title">Etiam facilisis velit ut nulla suscipit congue.</h4>
+                        <p class="card-text">Curabitur vel pharetra sem. Cras id massa efficitur, lobortis tortor at, dictum lacus. Vestibulum id neque et purus pretium euismod. Curabitur odio neque, aliquet vitae tempus quis, vulputate in nibh. Donec cursus purus a ex commodo vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <a href="#0" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </li>
+            <li class="layout-element">
+                <div class="card">
+                    <img class="card-img-top" src="http://placehold.it/318x180">
+                    <div class="card-block">
+                        <h4 class="card-title">Pellentesque viverra vitae augue quis ornare.</h4>
+                        <p class="card-text">Praesent consequat ante neque, eget hendrerit felis porta in.</p>
+                        <a href="#0" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </li>
+            <li class="layout-element">
+                <a class="layout-element-link" href="#0">
+                    <div class="card">
+                        <img class="card-img-top" src="http://placehold.it/318x180">
+                        <div class="card-block">
+                            <h4 class="card-title">Sed et porta tortor.</h4>
+                            <p class="card-text">Praesent consequat ante neque, eget hendrerit felis porta in. Pellentesque viverra vitae augue quis ornare. Cras efficitur massa et ligula ultrices, a congue nibh varius. Sed ac venenatis lacus. Aenean est nisl, luctus et elementum ut, tincidunt a nisi. Praesent sit amet sollicitudin sem. Vestibulum consequat iaculis lorem ac consectetur. Pellentesque vulputate ipsum vel aliquet pharetra. Ut hendrerit diam at augue varius, quis posuere leo hendrerit.</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <h1>Rigid Tiling x2 with Gutters &amp; Flexbox</h1>
+        <div class="flexbox">
+            <ul class="layout-container tiled tiling-x2 with-gutters rigid">
+                <li class="layout-element">
+                    <div class="card">
+                        <img class="card-img-top" src="http://placehold.it/318x180">
+                        <div class="card-block">
+                            <h4 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                            <p class="card-text">Proin imperdiet elementum justo, vitae bibendum justo aliquet aliquam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla facilisi. Cras fringilla, risus ac sodales tincidunt, lectus tellus rutrum sapien, ut interdum est massa vitae dui. Sed eget faucibus quam.</p>
+                            <a href="#0" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="layout-element">
+                    <a class="layout-element-link" href="#0">
+                        <div class="card">
+                            <img class="card-img-top" src="http://placehold.it/318x180">
+                            <div class="card-block">
+                                <h4 class="card-title">Donec congue nibh sit amet tortor malesuada aliquet.</h4>
+                                <p class="card-text">Fusce faucibus varius nisi, quis faucibus sapien auctor ac. Vivamus porttitor pretium varius. Pellentesque gravida justo in metus commodo, vitae bibendum justo scelerisque. Quisque varius vestibulum est, vitae sollicitudin nisi porttitor vel. Pellentesque ac tincidunt leo, sed elementum metus.</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="layout-element">
+                    <a class="layout-element-link" href="#0">
+                        <div class="card">
+                            <img class="card-img-top" src="http://placehold.it/318x180">
+                            <div class="card-block">
+                                <h4 class="card-title">Suspendisse nec ipsum tempus, hendrerit metus eu, vulputate orci.</h4>
+                                <p class="card-text">Curabitur sed fringilla libero. Nullam eu vulputate nisi. Fusce non finibus turpis, vel rutrum diam. Praesent ut nibh vitae nisi eleifend volutpat.</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="layout-element">
+                    <div class="card">
+                        <img class="card-img-top" src="http://placehold.it/318x180">
+                        <div class="card-block">
+                            <h4 class="card-title">Etiam facilisis velit ut nulla suscipit congue.</h4>
+                            <p class="card-text">Curabitur vel pharetra sem. Cras id massa efficitur, lobortis tortor at, dictum lacus. Vestibulum id neque et purus pretium euismod. Curabitur odio neque, aliquet vitae tempus quis, vulputate in nibh. Donec cursus purus a ex commodo vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="#0" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="layout-element">
+                    <div class="card">
+                        <img class="card-img-top" src="http://placehold.it/318x180">
+                        <div class="card-block">
+                            <h4 class="card-title">Pellentesque viverra vitae augue quis ornare.</h4>
+                            <p class="card-text">Praesent consequat ante neque, eget hendrerit felis porta in.</p>
+                            <a href="#0" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="layout-element">
+                    <a class="layout-element-link" href="#0">
+                        <div class="card">
+                            <img class="card-img-top" src="http://placehold.it/318x180">
+                            <div class="card-block">
+                                <h4 class="card-title">Sed et porta tortor.</h4>
+                                <p class="card-text">Praesent consequat ante neque, eget hendrerit felis porta in. Pellentesque viverra vitae augue quis ornare. Cras efficitur massa et ligula ultrices, a congue nibh varius. Sed ac venenatis lacus. Aenean est nisl, luctus et elementum ut, tincidunt a nisi. Praesent sit amet sollicitudin sem. Vestibulum consequat iaculis lorem ac consectetur. Pellentesque vulputate ipsum vel aliquet pharetra. Ut hendrerit diam at augue varius, quis posuere leo hendrerit.</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <h1>Rigid Tiling x2 with Wide Guttering</h1>
+        <ul class="layout-container tiled tiling-x2 with-gutters guttering-wide rigid">
+            <li class="layout-element">
+                <div class="card">
+                    <img class="card-img-top" src="http://placehold.it/318x180">
+                    <div class="card-block">
+                        <h4 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                        <p class="card-text">Proin imperdiet elementum justo, vitae bibendum justo aliquet aliquam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla facilisi. Cras fringilla, risus ac sodales tincidunt, lectus tellus rutrum sapien, ut interdum est massa vitae dui. Sed eget faucibus quam.</p>
+                        <a href="#0" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </li>
+            <li class="layout-element">
+                <a class="layout-element-link" href="#0">
+                    <div class="card">
+                        <img class="card-img-top" src="http://placehold.it/318x180">
+                        <div class="card-block">
+                            <h4 class="card-title">Donec congue nibh sit amet tortor malesuada aliquet.</h4>
+                            <p class="card-text">Fusce faucibus varius nisi, quis faucibus sapien auctor ac. Vivamus porttitor pretium varius. Pellentesque gravida justo in metus commodo, vitae bibendum justo scelerisque. Quisque varius vestibulum est, vitae sollicitudin nisi porttitor vel. Pellentesque ac tincidunt leo, sed elementum metus.</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="layout-element">
+                <a class="layout-element-link" href="#0">
+                    <div class="card">
+                        <img class="card-img-top" src="http://placehold.it/318x180">
+                        <div class="card-block">
+                            <h4 class="card-title">Suspendisse nec ipsum tempus, hendrerit metus eu, vulputate orci.</h4>
+                            <p class="card-text">Curabitur sed fringilla libero. Nullam eu vulputate nisi. Fusce non finibus turpis, vel rutrum diam. Praesent ut nibh vitae nisi eleifend volutpat.</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="layout-element">
+                <div class="card">
+                    <img class="card-img-top" src="http://placehold.it/318x180">
+                    <div class="card-block">
+                        <h4 class="card-title">Etiam facilisis velit ut nulla suscipit congue.</h4>
+                        <p class="card-text">Curabitur vel pharetra sem. Cras id massa efficitur, lobortis tortor at, dictum lacus. Vestibulum id neque et purus pretium euismod. Curabitur odio neque, aliquet vitae tempus quis, vulputate in nibh. Donec cursus purus a ex commodo vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <a href="#0" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </li>
+            <li class="layout-element">
+                <div class="card">
+                    <img class="card-img-top" src="http://placehold.it/318x180">
+                    <div class="card-block">
+                        <h4 class="card-title">Pellentesque viverra vitae augue quis ornare.</h4>
+                        <p class="card-text">Praesent consequat ante neque, eget hendrerit felis porta in.</p>
+                        <a href="#0" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </li>
+            <li class="layout-element">
+                <a class="layout-element-link" href="#0">
+                    <div class="card">
+                        <img class="card-img-top" src="http://placehold.it/318x180">
+                        <div class="card-block">
+                            <h4 class="card-title">Sed et porta tortor.</h4>
+                            <p class="card-text">Praesent consequat ante neque, eget hendrerit felis porta in. Pellentesque viverra vitae augue quis ornare. Cras efficitur massa et ligula ultrices, a congue nibh varius. Sed ac venenatis lacus. Aenean est nisl, luctus et elementum ut, tincidunt a nisi. Praesent sit amet sollicitudin sem. Vestibulum consequat iaculis lorem ac consectetur. Pellentesque vulputate ipsum vel aliquet pharetra. Ut hendrerit diam at augue varius, quis posuere leo hendrerit.</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <h1>Rigid Tiling x2 with Wide Guttering &amp; Flexbox</h1>
+        <div class="flexbox">
+            <ul class="layout-container tiled tiling-x2 with-gutters guttering-wide rigid">
+                <li class="layout-element">
+                    <div class="card">
+                        <img class="card-img-top" src="http://placehold.it/318x180">
+                        <div class="card-block">
+                            <h4 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                            <p class="card-text">Proin imperdiet elementum justo, vitae bibendum justo aliquet aliquam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla facilisi. Cras fringilla, risus ac sodales tincidunt, lectus tellus rutrum sapien, ut interdum est massa vitae dui. Sed eget faucibus quam.</p>
+                            <a href="#0" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="layout-element">
+                    <a class="layout-element-link" href="#0">
+                        <div class="card">
+                            <img class="card-img-top" src="http://placehold.it/318x180">
+                            <div class="card-block">
+                                <h4 class="card-title">Donec congue nibh sit amet tortor malesuada aliquet.</h4>
+                                <p class="card-text">Fusce faucibus varius nisi, quis faucibus sapien auctor ac. Vivamus porttitor pretium varius. Pellentesque gravida justo in metus commodo, vitae bibendum justo scelerisque. Quisque varius vestibulum est, vitae sollicitudin nisi porttitor vel. Pellentesque ac tincidunt leo, sed elementum metus.</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="layout-element">
+                    <a class="layout-element-link" href="#0">
+                        <div class="card">
+                            <img class="card-img-top" src="http://placehold.it/318x180">
+                            <div class="card-block">
+                                <h4 class="card-title">Suspendisse nec ipsum tempus, hendrerit metus eu, vulputate orci.</h4>
+                                <p class="card-text">Curabitur sed fringilla libero. Nullam eu vulputate nisi. Fusce non finibus turpis, vel rutrum diam. Praesent ut nibh vitae nisi eleifend volutpat.</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="layout-element">
+                    <div class="card">
+                        <img class="card-img-top" src="http://placehold.it/318x180">
+                        <div class="card-block">
+                            <h4 class="card-title">Etiam facilisis velit ut nulla suscipit congue.</h4>
+                            <p class="card-text">Curabitur vel pharetra sem. Cras id massa efficitur, lobortis tortor at, dictum lacus. Vestibulum id neque et purus pretium euismod. Curabitur odio neque, aliquet vitae tempus quis, vulputate in nibh. Donec cursus purus a ex commodo vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="#0" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="layout-element">
+                    <div class="card">
+                        <img class="card-img-top" src="http://placehold.it/318x180">
+                        <div class="card-block">
+                            <h4 class="card-title">Pellentesque viverra vitae augue quis ornare.</h4>
+                            <p class="card-text">Praesent consequat ante neque, eget hendrerit felis porta in.</p>
+                            <a href="#0" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="layout-element">
+                    <a class="layout-element-link" href="#0">
+                        <div class="card">
+                            <img class="card-img-top" src="http://placehold.it/318x180">
+                            <div class="card-block">
+                                <h4 class="card-title">Sed et porta tortor.</h4>
+                                <p class="card-text">Praesent consequat ante neque, eget hendrerit felis porta in. Pellentesque viverra vitae augue quis ornare. Cras efficitur massa et ligula ultrices, a congue nibh varius. Sed ac venenatis lacus. Aenean est nisl, luctus et elementum ut, tincidunt a nisi. Praesent sit amet sollicitudin sem. Vestibulum consequat iaculis lorem ac consectetur. Pellentesque vulputate ipsum vel aliquet pharetra. Ut hendrerit diam at augue varius, quis posuere leo hendrerit.</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>

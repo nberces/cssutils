@@ -1,0 +1,72 @@
+@mixin layout-container-tiling-x3
+{
+    > .layout-element
+    {
+        width: 33.3%;
+
+        &:nth-child(2n+1)
+        {
+            clear: none;
+        }
+
+        &:nth-child(3n+1)
+        {
+            clear: left;
+        }
+    }
+
+    &.with-gutters
+    {
+        > .layout-element
+        {
+            margin-left: 2%;
+            width: 32%;
+
+            &:nth-child(2n+1)
+            {
+                margin-left: 2%;
+            }
+
+            &:first-child,
+            &:nth-child(3n+1)
+            {
+                margin-left: 0;
+            }
+        }
+    }
+
+    &.with-gutters.guttering-wide
+    {
+        > .layout-element
+        {
+            margin-left: 5%;
+            width: 30%;
+
+            &:nth-child(2n+1)
+            {
+                margin-left: 5%;
+            }
+
+            &:first-child,
+            &:nth-child(3n+1)
+            {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+.layout-container.tiled.tiling-x3
+{
+    @extend .layout-container.tiled.tiling-x2;
+
+    @media screen and (min-width: $breakpoint_tiling-x3-on)
+    {
+        @include layout-container-tiling-x3;
+    }
+}
+
+.layout-container.tiled.tiling-x3.rigid
+{
+   @include layout-container-tiling-x3;
+}

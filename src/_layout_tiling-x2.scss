@@ -1,0 +1,55 @@
+@mixin layout-container-tiling-x2
+{
+    > .layout-element
+    {
+        width: 50%;
+
+        &:nth-child(2n+1)
+        {
+            clear: left;
+        }
+    }
+
+    &.with-gutters
+    {
+        > .layout-element
+        {
+            margin-left: 2%;
+            width: 49%;
+
+            &:first-child,
+            &:nth-child(2n+1)
+            {
+                margin-left: 0;
+            }
+        }
+    }
+
+    &.with-gutters.guttering-wide
+    {
+        > .layout-element
+        {
+            margin-left: 5%;
+            width: 47.5%;
+
+            &:first-child,
+            &:nth-child(2n+1)
+            {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+.layout-container.tiled.tiling-x2
+{
+    @media screen and (min-width: $breakpoint_tiling-x2-on)
+    {
+        @include layout-container-tiling-x2;
+    }
+}
+
+.layout-container.tiled.tiling-x2.rigid
+{
+   @include layout-container-tiling-x2;
+}

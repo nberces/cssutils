@@ -1,0 +1,13 @@
+$breakpoint_tiling-x2-on: 540px;
+$breakpoint_tiling-x3-on: 860px;
+$breakpoint_tiling-x4-on: 1190px;
+$breakpoint_tiling-x5-on: 1410px;
+$breakpoint_tiling-x6-on: 1750px;
+
+@import 'layout_core';
+@import 'layout_tiled';
+@import 'layout_tiling-x2';
+@import 'layout_tiling-x3';
+@import 'layout_tiling-x4';
+@import 'layout_tiling-x5';
+@import 'layout_tiling-x6';
